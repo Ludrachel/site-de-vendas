@@ -1,0 +1,293 @@
+body{
+    
+    font-family: Arial, sans-serif;
+    
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(49, 48, 48);
+    background-image: url(imgscell/cellfundo\(3\).jpg);
+        color: var(--text-color);
+
+}
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #971b1b;
+  }
+  
+  nav li {
+    float: left; 
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  #logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-left: 20px solid;
+    
+}
+
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+
+.title{
+  opacity: 0;
+  text-align: center; 
+  margin-top: 40px;
+  animation:surprise 3s infinite;
+  margin-top: 80px;
+
+}
+
+
+.login-container {
+  opacity: .9;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.login-box, .register-box {
+  padding: 20px;
+  height: 350px;
+}
+
+.login-box {
+  background: #eee;
+  border-bottom-left-radius:20px;
+
+
+}
+
+.register-box {
+  backdrop-filter: blur(10px);
+  opacity: .9;
+  background: #ddd;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius:20px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px; 
+}
+
+button {
+  align-self: center;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input {
+  padding-right: 30px;
+}
+
+.material-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.input-field {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border: solid 1px rgb(230, 65, 65);
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border:solid 1px red;
+}
+.icons{
+    padding: 10px;
+    background-image: url("mail_FILL0_wght400_GRAD0_opsz24.png");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:left center;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+#name{
+  background-image: url("person_FILL0_wght400_GRAD0_opsz24.png");
+}
+
+#pass{
+  background-image: url("lock_FILL0_wght400_GRAD0_opsz24\ \(1\).png");
+}
+
+#button-1{
+    background-color:transparent;
+    margin:solid 2px rgb(230, 65, 65) ;
+    color:rgb(230, 65, 65);
+
+}
+#button-1:hover{
+    animation:color 2s infinite;
+    cursor: pointer;
+    color: black;
+}
+
+#button-2{
+  width: 300px;
+  margin-left:35px;
+  border-bottom-left-radius: 20px;
+  color:rgb(230, 65, 65);
+  cursor:pointer;
+
+}
+
+#button-2:hover{
+  animation: color 2s infinite;
+  color: black;
+
+
+}
+
+pre{
+    border-right: 4px solid;
+    width: 25ch;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: typing 10s steps(25), two 0.5s infinite step-end alternate;
+}
+
+@keyframes color {
+    100%{background-color:rgb(230, 65, 65);}
+    
+}
+
+@keyframes typing {
+
+from {width: 0;}
+
+}
+
+@keyframes surprise{
+
+ 
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }   
+  
+}
+
+
+@media only screen and (max-width:901px){
+    #button-2{
+      width: 250px;
+    }
+}
+
+@media only screen and (max-width:780px){
+    #button-2{
+      width: 200px;
+
+    }
+}
+
+
+/* Para telas até 600px */
+@media only screen and (max-width: 661px) {
+
+
+body{
+  background:#ddd;
+ 
+
+}
+
+.login-container {
+  flex-direction: column;
+}
+
+.register-box {
+  width: 100%;
+  margin: solid 2px black;
+}
+
+.register-box {
+  margin-top: 10px;
+}
+
+.login-box{
+  display: none;
+}
+
+}
+
+/* Para telas até 400px */ 
+@media only screen and (max-width: 400px) {
+
+input, button {
+  width: 90%;
+  margin-left:5%;
+}
+
+input,button{
+  margin-top:5px;
+}
+
+
+#sign-up{
+      white-space:nowrap;
+
+
+}
+
+}
+
+

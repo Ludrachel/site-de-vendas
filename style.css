@@ -1,0 +1,154 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(49, 48, 48);
+    color: var(--text-color);
+  }   
+  
+
+  :root{
+    --bg-color:var(--bg-color) #1d2631;
+    --tex-color: #fff;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    border-bottom: solid 2px #971b1b;
+
+}
+
+
+
+.header-icons{
+  display: flex;
+  align-items: center;
+}
+
+#menu{
+  font-size: 35px;
+  color: var(--tex-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.header-icons i{
+  margin-right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header-icons i:hover{
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+
+
+
+  #carouselExampleAutoplaying{
+    display: none;
+  }
+
+
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 1px solid #ddd;
+  }
+  
+  
+  .footer-info {
+    width: 24%;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+
+
+#btn{
+  position: left;
+
+  border-radius: 50%;
+  height:50px;
+  width: 50px;
+  background-color: #971b1b;
+  color: white;
+
+}
+
+
+  #logo{
+    height: 100px;
+    width: 100px;
+    margin-right:10px;
+    border-radius: 50%;
+    border-top: 20px solid;
+    
+}
+
+
+  
+
+
+
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #971b1b;
+  }
+  
+  nav li {
+    float: left; 
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .produto {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .produto img {
+    float: left;
+    margin-right: 20px;
+  }
